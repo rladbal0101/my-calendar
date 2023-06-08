@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ViewPage(props) {
+function ScheduleWtitePage(props) {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function ViewPage(props) {
   );
 }
 
-export default ViewPage;
+export default ScheduleWtitePage;

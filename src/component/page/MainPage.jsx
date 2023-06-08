@@ -4,20 +4,25 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   padding: 20px;
   width: calc(100% - 50px);
+  height: 500px;
   `;
 
 const Container = styled.div`
   width: 100%;
-  height: 600px;
-  /* background-color: #999; */
+  height: 100%;
   text-align: center;
   `;
 
 const CalendarTable = styled.table`
   border: 1px solid #333;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   width: 100%;
   height: 100%;
+  border-collapse: collapse;
+
+  & th, td {
+    border: 1px solid black;
+  }
 `;
 
 function MainPage(props) {
@@ -39,10 +44,7 @@ function MainPage(props) {
             <th>토</th>
           </tr>
           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td colSpan={4}></td>
             <td>1</td>
             <td>2</td>
             <td>3</td>

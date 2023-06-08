@@ -14,6 +14,7 @@ function App() {
       <MainTitleText>캘린더</MainTitleText>
       <Routes>
         <Route path="/" element={<MainPage />} />
+        <Route path="/schedule" />
       </Routes>
     </BrowserRouter>
   );
